@@ -55,10 +55,12 @@ module.exports = function (grunt) {
       },
 
     // Create changelog based on git commits
-      changelog: {
+      conventionalChangelog: {
         options: {
-          repository: pkg.repository,
-          dest: 'CHANGELOG.md'
+          changelogOpts: {},
+        },
+        release: {
+          src: 'CHANGELOG.md'
         }
       },
 
