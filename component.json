@@ -1,0 +1,19 @@
+{
+  "name": "showdown-container",
+  "repository": "modosc/showdown-container",
+  "description": "Block level containers for the showdown markdown parser",
+  "version": "0.0.1",
+  "keywords": [
+    "markdown",
+    "md",
+    "showdown",
+    "extension"
+  ],
+  "dependencies": {
+    "showdownjs/showdown": "1.*.*"
+  },
+  "scripts": [
+    "./dist/showdown-container.js"
+  ],
+  "license": "MIT"
+}

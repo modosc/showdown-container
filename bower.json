@@ -1,0 +1,35 @@
+{
+  "name": "showdown-container",
+  "version": "0.0.1",
+  "description": "Block level containers for the showdown markdown parser",
+  "keywords": [
+    "markdown",
+    "md",
+    "showdown",
+    "extension"
+  ],
+  "license": "MIT",
+  "author": "modosc (http://github.com/modosc)",
+  "main": "./dist/showdown-container.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modosc/showdown-container.git",
+    "web": "https://github.com/modosc/showdown-container"
+  },
+  "dependencies": {
+    "showdown": "^1.6.4"
+  },
+  "ignore": [
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".jscs.json",
+    ".jshintignore",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.js",
+    "package.json",
+    "src/*",
+    "test/*"
+  ]
+}
