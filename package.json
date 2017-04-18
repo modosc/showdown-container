@@ -8,6 +8,9 @@
     "showdown",
     "extension"
   ],
+  "files": [
+    "dist/*"
+  ],
   "license": "MIT",
   "author": "modosc (http://github.com/modosc)",
   "main": "./dist/showdown-container.js",
