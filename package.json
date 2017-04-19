@@ -1,6 +1,6 @@
 {
   "name": "showdown-container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Block level containers for the showdown markdown parser",
   "keywords": [
     "markdown",

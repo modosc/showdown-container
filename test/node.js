@@ -6,7 +6,7 @@
 
   require('chai').should()
   var showdown = require('showdown'),
-    ghostextra = require('../src/showdown-container.js'),
+    showdownContainer = require('../src/showdown-container.js'),
     fs = require('fs'),
     cases = fs.readdirSync('test/cases/')
           .filter(filter())
@@ -22,14 +22,14 @@
   // Test cases
   //
   describe('Showdown Container Extension cases testcase', function () {
-    var converter = new showdown.Converter({extensions: [ghostextra]})
+    var converter = new showdown.Converter({extensions: ['showdown-container']})
     for (var i = 0; i < cases.length; ++i) {
       it(cases[i].name, assertion(cases[i], converter))
     }
   })
 
   describe('Showdown Container Extension issues testcases', function () {
-    var converter = new showdown.Converter({extensions: [ghostextra]})
+    var converter = new showdown.Converter({extensions: ['showdown-container']})
     for (var i = 0; i < issues.length; ++i) {
       it(issues[i].name, assertion(issues[i], converter))
     }
