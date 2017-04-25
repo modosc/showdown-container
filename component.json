@@ -2,7 +2,7 @@
   "name": "showdown-container",
   "repository": "modosc/showdown-container",
   "description": "Block level containers for the showdown markdown parser",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "keywords": [
     "markdown",
     "md",
