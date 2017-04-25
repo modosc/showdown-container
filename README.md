@@ -23,7 +23,10 @@ Which will be rendered as:
 ```javascript
 var Showdown = require('showdown');
 var showdownContainer = require('showdown-container');
-var converter = new showdown.Converter({ extensions: ['showdown-container'] });
+// on the server side
+var converter = new showdown.Converter({ extensions: [showdownContainer] });
+// on the client side (or with global.showdown set)
+var converter = new showdown.Converter({ extensions: ['container'] });
 ```
 
 ## Future

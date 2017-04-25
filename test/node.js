@@ -22,43 +22,18 @@
   // Test cases
   //
   describe('Showdown Container Extension cases testcase', function () {
-    var converter = new showdown.Converter({extensions: ['showdown-container']})
+    var converter = new showdown.Converter({extensions: [showdownContainer]})
     for (var i = 0; i < cases.length; ++i) {
       it(cases[i].name, assertion(cases[i], converter))
     }
   })
 
   describe('Showdown Container Extension issues testcases', function () {
-    var converter = new showdown.Converter({extensions: ['showdown-container']})
+    var converter = new showdown.Converter({extensions: [showdownContainer]})
     for (var i = 0; i < issues.length; ++i) {
       it(issues[i].name, assertion(issues[i], converter))
     }
   })
-
-  // describe('Ghost Extra Extension with options enabled testcase', function () {
-  //   var converter = new showdown.Converter({
-  //     extensions: [ghostextra],
-  //     omitExtraWLInCodeBlocks: true,
-  //     parseImgDimensions: true,
-  //     simplifiedAutoLink: true,
-  //     excludeTrailingPunctuationFromURLs: true,
-  //     literalMidWordUnderscores: true,
-  //     strikethrough: true,
-  //     tables: true,
-  //     tablesHeaderId: true,
-  //     ghCodeBlocks: true,
-  //     tasklists: true,
-  //     smoothLivePreview: true,
-  //     simpleLineBreaks: true,
-  //     requireSpaceBeforeHeadingText: true,
-  //     ghMentions: false,
-  //     encodeEmails: true
-  //   });
-  //
-  //   for (var i = 0; i < options.length; ++i) {
-  //     it(options[i].name, assertion(options[i], converter));
-  //   }
-  // });
 
   /////////////////////////////////////////////////////////////////////////////
   // Test cases
