@@ -1,4 +1,4 @@
-showdown-container
+showdown-container [![npm version](https://badge.fury.io/js/showdown-container.svg)](https://badge.fury.io/js/showdown-container)
 ==============================
 
 Fenced container plugin for the [showdown](https://github.com/showdownjs/showdown) markdown parser, idea copied from [markdown-it-container](https://github.com/markdown-it/markdown-it-container)
