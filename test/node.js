@@ -9,11 +9,11 @@
     showdownContainer = require('../src/showdown-container.js'),
     fs = require('fs'),
     cases = fs.readdirSync('test/cases/')
-          .filter(filter())
-          .map(map('test/cases/')),
+      .filter(filter())
+      .map(map('test/cases/')),
     issues = fs.readdirSync('test/issues/')
-          .filter(filter())
-          .map(map('test/issues/'))
+      .filter(filter())
+      .map(map('test/issues/'))
       // options = fs.readdirSync('test/options/')
       //   .filter(filter())
       //   .map(map('test/options/'));

@@ -20,7 +20,7 @@
     {
       type: 'lang',
       filter: function(text, converter) {
-          // if our last tag isn't closed then close it at the end of our input text
+        // if our last tag isn't closed then close it at the end of our input text
         var count = (text.match(/:::/g) || []).length
         if (count % 2) {
           text += "\n:::\n"

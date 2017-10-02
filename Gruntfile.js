@@ -8,14 +8,14 @@ module.exports = function (grunt) {
   //load Package configuration
   var pkg = grunt.file.readJSON('package.json'),
 
-  // load pkg hst
+    // load pkg hst
     hst = grunt.file.readJSON('.hst.json'),
 
-  // Project configuration.
+    // Project configuration.
     config = {
       pkg: pkg,
 
-    // File concatenation
+      // File concatenation
       concat: {
         options: {
           sourceMap: true,
@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         ]
       },
 
-    // File minification
+      // File minification
       uglify: {
         options: {
           sourceMap: true,
@@ -54,7 +54,7 @@ module.exports = function (grunt) {
         }
       },
 
-    // Create changelog based on git commits
+      // Create changelog based on git commits
       conventionalChangelog: {
         options: {
           changelogOpts: {},
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
         }
       },
 
-    //Run tests
+      //Run tests
       simplemocha: {
         node: {
           src: 'test/node.js',
@@ -78,13 +78,13 @@ module.exports = function (grunt) {
       },
 
 
-    /**
+      /**
      * EXTRA
      *
      * The following tasks are used to prepare and configure the boilerplate with your values automatically
      * You can remove them safely if you don't need them anymore
      */
-    // This task ensures data in bower.json and component.json is always in sync with package.json
+      // This task ensures data in bower.json and component.json is always in sync with package.json
       update_json: {
         options: {
           src: 'package.json',
@@ -126,7 +126,7 @@ module.exports = function (grunt) {
         }
       },
 
-    // This task renames the main library file in src directory matches the one you supplied in package.json
+      // This task renames the main library file in src directory matches the one you supplied in package.json
       rename: {
         mainFile: {
           src: 'src/' + hst.src + '.js',

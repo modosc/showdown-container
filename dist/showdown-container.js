@@ -1,4 +1,4 @@
-;/*! showdown-container 25-04-2017 */
+;/*! showdown-container 02-10-2017 */
 (function(){
 (function (extension) {
   'use strict'
@@ -22,7 +22,7 @@
     {
       type: 'lang',
       filter: function(text, converter) {
-          // if our last tag isn't closed then close it at the end of our input text
+        // if our last tag isn't closed then close it at the end of our input text
         var count = (text.match(/:::/g) || []).length
         if (count % 2) {
           text += "\n:::\n"
