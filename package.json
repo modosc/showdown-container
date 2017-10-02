@@ -1,6 +1,6 @@
 {
   "name": "showdown-container",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Block level containers for the showdown markdown parser",
   "keywords": [
     "markdown",
@@ -40,6 +40,6 @@
     "test": "grunt test"
   },
   "peerDependencies": {
-    "showdown": "^1.6.4"
+    "showdown": "^1.7.5"
   }
 }
