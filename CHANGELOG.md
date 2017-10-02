@@ -1,3 +1,10 @@
+<a name="0.3.0"></a>
+# 0.3.0 (2017-10-02)
+
+* bump peer-deps ([9b23f8b](https://github.com/modosc/showdown-container/commit/9b23f8b))
+
+
+
 <a name="0.2.0"></a>
 # 0.2.0 (2017-10-02)
 
