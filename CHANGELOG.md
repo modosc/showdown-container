@@ -1,3 +1,11 @@
+<a name="0.2.0"></a>
+# 0.2.0 (2017-10-02)
+
+* npm updates, move to yarn ([028f168](https://github.com/modosc/showdown-container/commit/028f168))
+* Update README.md ([660b106](https://github.com/modosc/showdown-container/commit/660b106))
+
+
+
 <a name="0.1.0"></a>
 # 0.1.0 (2017-04-25)
 
