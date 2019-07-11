@@ -22,22 +22,20 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "eslint": "^4.8.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.4",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "^3.1.0",
     "grunt-conventional-changelog": "^6.1.0",
     "grunt-eslint": "^20.1.0",
     "grunt-rename": "^0.1.4",
-    "grunt-simple-mocha": "^0.4.0",
-    "grunt-update-json": "^0.2.1",
     "load-grunt-tasks": "^3.2.0",
-    "mocha": "^3.3.0",
+    "mocha": "^6.1.4",
     "should": "^13.1.0",
     "showdown": "^1.7.5",
     "source-map-support": "^0.4.14"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "mocha"
   },
   "peerDependencies": {
     "showdown": "^1.7.5"

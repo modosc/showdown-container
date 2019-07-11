@@ -64,20 +64,6 @@ module.exports = function (grunt) {
         }
       },
 
-      //Run tests
-      simplemocha: {
-        node: {
-          src: 'test/node.js',
-          options: {
-            globals: ['should'],
-            timeout: 3000,
-            ignoreLeaks: false,
-            reporter: 'spec'
-          }
-        }
-      },
-
-
       /**
      * EXTRA
      *
@@ -146,21 +132,12 @@ module.exports = function (grunt) {
   // load all grunt tasks
   require('load-grunt-tasks')(grunt)
 
-  grunt.loadNpmTasks('grunt-simple-mocha')
-
   // Alias tasks
   grunt.registerTask('lint', ['eslint'])
-  grunt.registerTask('test', ['simplemocha'])
-  grunt.registerTask('build', ['lint', 'test', 'concat', 'uglify'])
+  grunt.registerTask('build', ['lint', 'concat', 'uglify'])
   grunt.registerTask('prep-release', ['build', 'changelog'])
 
   // Default task(s).
-  grunt.registerTask('default', ['test'])
+  // grunt.registerTask('default', ['test'])
 
-  // Extra tasks (can be deleted)
-  grunt.registerTask('saveHst', function (arg1, arg2) {
-    hst.src = pkg.name
-    grunt.file.write('.hst.json', JSON.stringify(hst))
-  })
-  grunt.registerTask('prepare', ['update_json', 'rename', 'saveHst'])
 }
